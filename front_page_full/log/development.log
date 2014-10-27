@@ -1,0 +1,59 @@
+[Mon Oct 27 19:41:56 2014] [info] Listening at "http://*:3000".
+[Mon Oct 27 19:42:02 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Oct 27 19:42:02 2014] [debug] GET "/".
+[Mon Oct 27 19:42:02 2014] [error] Not enough arguments for index at (eval 274) line 1, at EOF
+
+[Mon Oct 27 19:42:02 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Oct 27 19:42:02 2014] [debug] Template "exception.html.ep" not found.
+[Mon Oct 27 19:42:02 2014] [debug] Rendering inline template "8122878e3bc1034543706fb58b4de464".
+[Mon Oct 27 19:42:02 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Mon Oct 27 19:42:02 2014] [debug] 500 Internal Server Error (0.025916s, 38.586/s).
+[Mon Oct 27 19:44:37 2014] [info] Listening at "http://*:3000".
+[Mon Oct 27 19:44:42 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Oct 27 19:44:42 2014] [debug] GET "/".
+[Mon Oct 27 19:44:42 2014] [error] Unmatched right curly bracket at /here/docs/home/code/mojolicious-lightning/front_page_full/script/../lib/FrontPageFull/Controller/Example.pm line 21, at end of line
+syntax error at /here/docs/home/code/mojolicious-lightning/front_page_full/script/../lib/FrontPageFull/Controller/Example.pm line 21, near "}"
+Compilation failed in require at (eval 274) line 1.
+
+[Mon Oct 27 19:44:42 2014] [debug] Template "exception.development.html.ep" not found.
+[Mon Oct 27 19:44:42 2014] [debug] Template "exception.html.ep" not found.
+[Mon Oct 27 19:44:42 2014] [debug] Rendering inline template "8122878e3bc1034543706fb58b4de464".
+[Mon Oct 27 19:44:42 2014] [debug] Rendering inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Mon Oct 27 19:44:42 2014] [debug] 500 Internal Server Error (0.034434s, 29.041/s).
+[Mon Oct 27 19:45:36 2014] [debug] GET "/".
+[Mon Oct 27 19:45:36 2014] [debug] Routing to controller "FrontPageFull::Controller::Example" and action "index".
+[Mon Oct 27 19:45:36 2014] [debug] Action not found in controller.
+[Mon Oct 27 19:45:36 2014] [debug] Template "example/index.html.ep" not found.
+[Mon Oct 27 19:45:36 2014] [debug] Template "not_found.development.html.ep" not found.
+[Mon Oct 27 19:45:36 2014] [debug] Template "not_found.html.ep" not found.
+[Mon Oct 27 19:45:36 2014] [debug] Rendering cached inline template "8122878e3bc1034543706fb58b4de464".
+[Mon Oct 27 19:45:36 2014] [debug] Rendering cached inline template "4fcf2af99f1803a7a26c2e9b04430f8c".
+[Mon Oct 27 19:45:36 2014] [debug] 404 Not Found (0.006178s, 161.865/s).
+[Mon Oct 27 19:46:43 2014] [info] Listening at "http://*:3000".
+[Mon Oct 27 19:46:46 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Oct 27 19:46:46 2014] [debug] GET "/".
+[Mon Oct 27 19:46:46 2014] [debug] Routing to controller "FrontPageFull::Controller::Example" and action "index".
+[Mon Oct 27 19:46:46 2014] [debug] Action not found in controller.
+[Mon Oct 27 19:46:46 2014] [debug] Rendering template "example/index.html.ep".
+[Mon Oct 27 19:46:46 2014] [debug] 200 OK (0.003250s, 307.692/s).
+[Mon Oct 27 19:47:01 2014] [debug] GET "/".
+[Mon Oct 27 19:47:01 2014] [debug] Routing to controller "FrontPageFull::Controller::Example" and action "index".
+[Mon Oct 27 19:47:01 2014] [debug] Action not found in controller.
+[Mon Oct 27 19:47:01 2014] [debug] Rendering cached template "example/index.html.ep".
+[Mon Oct 27 19:47:01 2014] [debug] 200 OK (0.001227s, 814.996/s).
+[Mon Oct 27 19:57:14 2014] [debug] GET "/".
+[Mon Oct 27 19:57:14 2014] [debug] Routing to controller "FrontPageFull::Controller::Example" and action "index".
+[Mon Oct 27 19:57:14 2014] [debug] Action not found in controller.
+[Mon Oct 27 19:57:14 2014] [debug] Rendering cached template "example/index.html.ep".
+[Mon Oct 27 19:57:14 2014] [debug] 200 OK (0.001008s, 992.063/s).
+[Mon Oct 27 19:57:38 2014] [info] Listening at "http://*:3000".
+[Mon Oct 27 19:57:41 2014] [debug] Your secret passphrase needs to be changed!!!
+[Mon Oct 27 19:57:41 2014] [debug] GET "/".
+[Mon Oct 27 19:57:41 2014] [debug] Routing to controller "FrontPageFull::Controller::Example" and action "index".
+[Mon Oct 27 19:57:41 2014] [debug] Action not found in controller.
+[Mon Oct 27 19:57:41 2014] [debug] Rendering template "example/index.html.ep".
+[Mon Oct 27 19:57:41 2014] [debug] 200 OK (0.003080s, 324.675/s).
+[Mon Oct 27 19:57:41 2014] [debug] GET "/title".
+[Mon Oct 27 19:57:41 2014] [debug] Routing to controller "FrontPageFull::Controller::Example" and action "title".
+[Mon Oct 27 19:57:41 2014] [debug] 101 Switching Protocols (0.000540s, 1851.852/s).
+[Mon Oct 27 19:57:57 2014] [debug] Inactivity timeout.
