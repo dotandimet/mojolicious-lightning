@@ -13,7 +13,10 @@ sub startup {
 
   # Normal route to controller
   $r->get('/')->to('example#index');
+  $r->get('/lookup')->to('example#lookup');
+  $r->get('/haaretz')->to('example#haaretz');
   $r->websocket('/title')->to('example#title');
+  $r->websocket('/bogusbot')->to('example#bogusbot');
 }
 
 1;

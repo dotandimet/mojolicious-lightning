@@ -1,0 +1,26 @@
+% my $url = url_for 'title';
+<script>
+  var url = '<%= $url->to_abs %>';
+  var ws = new WebSocket(url);
+  ws.onmessage = function (event) { document.getElementById('title').innerHTML += event.data };
+  ws.onopen    = function (event) { ws.send( document.getElementById('site').value) };
+</script>
+
+%= form_for '/' => onsubmit => 'function(){ return false; }' => begin
+%= input_tag 'site', id => 'site', value => 'http://mojolicio.us';
+%= end
+
+<div id="title"></div>
+<script>
+document.getElementById('site').onblur
+  = function(event) {
+      var msg = document.getElementById('site').value;
+      if (ws.readyState === ws.CLOSED) {
+        console.log('closed! reopening...');
+        ws = new WebSocket(url);
+        ws.onopen  = function (event) { ws.send(msg) };
+      }
+      if (ws.readyState === ws.OPEN)
+        ws.send(this.value);
+    };
+</script>
