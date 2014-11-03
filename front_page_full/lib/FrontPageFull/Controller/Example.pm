@@ -22,11 +22,23 @@ sub title($self) {
 # This is a websocket action
 sub bogusbot($self) {
   $self->on(message => sub { my ($self, $msg) = @_;
-    
-    my $full = $self->ua->get($msg, { 'User-Agent' => 'Googlebot/2.1; +http://www.google.com/bot.html)'  } )->res->dom->find('#article-box p')->join("\n");
+    my $full = $self->ua->get( $msg, { 'User-Agent' => 'Googlebot/2.1; +http://www.google.com/bot.html)' } )->res->dom->find('#article-box p')->join("\n");
     $self->send($full);
   });
 };
 
+# This is a websocket action
+sub nb_title ($self) {
+  $self->on(message => sub ($self, $msg) {
+    $self->delay(sub($d) {
+      $self->ua->get($msg, $d->begin);
+    },
+    sub ($d, $tx) {
+      die "Failed to fetch page" unless ($tx->success);
+      my $title = $tx->res->dom->at('title')->text;
+      $self->send($title);
+    });
+  });
+};
 
 1;
