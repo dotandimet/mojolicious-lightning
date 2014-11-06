@@ -1,0 +1,12 @@
+This folder contains the following:
+
+ - frontpage - a mojolicious lite app, identical to the 2nd example on the
+   http://mojolicio.us front page.
+
+ - front_page_full - a mojolicious full app, expanded from the example above.
+   The logic is in the FrontPageFull::Controller::Example module, it includes
+   both an example with a text input, and an example with an async response.
+
+   Also a widget for getting the full text for haaretz.co.il subscription-only
+   articles, because it was so trivial to implement.
+
